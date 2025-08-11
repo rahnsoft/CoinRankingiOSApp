@@ -61,3 +61,4 @@ RealmSwift.xcframework/
 *.realm
 *.realm.lock
 *.realm.management/
+Pods/
