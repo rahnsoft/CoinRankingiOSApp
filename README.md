@@ -26,17 +26,37 @@ This iOS application fetches cryptocurrency data from the CoinRanking API and pr
   - Keychain used alongside config files to securely store the API key at runtime  
 - **Dependency Injection:** Applied for modularity and ease of testing  
 
+## Architecture
+
+This project follows a **MVVM + Coordinator (MVVM+C)** pattern combined with **Clean Architecture** principles to ensure a scalable, maintainable, and testable codebase.
+
+- **MVVM (Model-View-ViewModel):**  
+  Separates UI logic from business logic, enabling clear data binding and reactive updates. This improves code clarity and testability—crucial for handling real-time data in a fintech environment.
+
+- **Coordinator Pattern:**  
+  Manages navigation and flow logic outside of view controllers, keeping the UI components lightweight and focused on their presentation responsibilities. This makes onboarding, login, and complex screen flows easier to manage and extend.
+
+- **Clean Architecture:**  
+  Enforces separation of concerns between domain, data, and presentation layers. This promotes modularity and flexibility, allowing independent development and testing of core business rules, which is vital for the security and reliability required in financial apps.
+
+**Why this architecture for a fintech app?**  
+Financial applications demand high reliability, security, and maintainability. By structuring the codebase with MVVM+C and Clean Architecture, we achieve:  
+- **Robustness:** Clear boundaries reduce bugs and unintended side-effects.  
+- **Testability:** Domain logic can be thoroughly unit tested without UI dependencies.  
+- **Scalability:** Easy to add features like new screens, authentication flows, or external services.  
+- **Maintainability:** Code is easier to understand and modify, which is critical for evolving fintech requirements.
+
 ## Features & Flow
 
-- **Splash & Onboarding:** Animated splash and multi-step Get Started screens using SwiftUI  
-- **Login:** Basic login implemented with sanity checks; currently accepts any input (Firebase OTP validation planned)  
-- **Top 100 Coins List:**  
+- Splash & Onboarding: Animated splash and multi-step Get Started screens using SwiftUI  
+- Login: Basic login implemented with sanity checks; currently accepts any input (Firebase OTP validation planned)  
+- Top 100 Coins List:  
   - Pagination with 20 coins per page  
   - Sorting/filtering by price and 24-hour performance  
   - Swipe-to-favorite coins  
-- **Coin Details:** Performance chart with selectable time filters and detailed statistics  
-- **Favorites Screen:** View and manage favorite coins with swipe-to-unfavorite support  
-- **Dark Mode:** Full support following system appearance settings  
+- Coin Details: Performance chart with selectable time filters and detailed statistics  
+- Favorites Screen: View and manage favorite coins with swipe-to-unfavorite support  
+- Dark Mode: Full support following system appearance settings  
 
 ## Known Limitations
 
@@ -46,49 +66,6 @@ This iOS application fetches cryptocurrency data from the CoinRanking API and pr
 
 ## Build & Run Instructions
 
-To clone the repo:  
-`git clone https://github.com/rahnsoft/CoinRankingiOSApp.git`
-
-- Open `CoinRankingCrypto.xcodeproj` in Xcode  
-- Install dependencies via CocoaPods or Swift Package Manager  
-- Build and run on iOS 14+ simulator or physical device  
-
-## Testing
-
-- Unit tests cover repository and domain layers using mocks and RxBlocking  
-- Tests verify pagination, filtering, and local favorites persistence  
-- UI tests are not currently implemented  
-
-## Security & Configuration
-
-- API key stored securely using:  
-  - Configuration files (`.xcconfig`) for build-time management  
-  - Keychain at runtime to protect sensitive keys from exposure  
-- Network requests use HTTPS through RxAlamofire  
-- Sensitive user data stored only in UserDefaults for non-critical data (favorites)  
-- No SSL pinning or biometric authentication implemented yet  
-- No custom binary hardening like stack canaries or code obfuscation currently  
-- **Note:** Some third-party libraries used (e.g., RxSwift, RxAlamofire, DGCharts) may lack stack canaries or other modern binary hardening techniques, which could increase vulnerability to certain memory corruption exploits.  
-  To mitigate this, the project enables Objective-C stack canaries via the `-fstack-protector-strong` compiler flag in build settings, providing runtime protection against stack buffer overflows.
-
-## Challenges & Solutions
-
-- Managing a hybrid UIKit + SwiftUI UI and reactive state synchronization  
-- Handling multiple loading states (initial, pull-to-refresh, pagination) cleanly with RxSwift  
-- Implementing adaptive dark and light mode styles  
-- Limited time prevented full Firebase OTP integration  
-
-## Future Improvements
-
-- Implement Firebase OTP validation for login security  
-- Add DexGuard for code obfuscation and binary protection  
-- Integrate Dynatrace monitoring for performance and crash analytics  
-- Use Keychain/Secure Enclave for sensitive user data storage beyond API keys  
-- Add offline caching and background data refresh  
-- Expand test coverage with UI and integration tests  
-- Implement SSL pinning and biometric authentication for enhanced security  
-
-## License
-
-MIT License
-
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/rahnsoft/CoinRankingiOSApp.git
