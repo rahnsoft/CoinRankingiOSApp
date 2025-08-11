@@ -22,7 +22,7 @@ playground.xcworkspace
 # .swiftpm
 
 # CocoaPods
-# Pods/           # Uncomment if you want to ignore Pods directory
+Pods/           # Ignoring Pods folder (includes Realm if via CocoaPods)
 # *.xcworkspace   # Uncomment if you want to ignore workspace file
 
 # Carthage
@@ -53,3 +53,11 @@ DerivedData/
 *.tmp
 *.temp
 
+# Realm binaries and related files (if added manually)
+Realm.framework/
+Realm.xcframework/
+RealmSwift.framework/
+RealmSwift.xcframework/
+*.realm
+*.realm.lock
+*.realm.management/
