@@ -69,3 +69,4 @@ Financial applications demand high reliability, security, and maintainability. B
 1. Clone the repo:  
    ```bash
    git clone https://github.com/rahnsoft/CoinRankingiOSApp.git
+   pod install
