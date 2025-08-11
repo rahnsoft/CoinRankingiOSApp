@@ -1,0 +1,114 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Differentiator (5.0.0)
+  - Kingfisher (7.8.1)
+  - KingfisherSVG (1.0.0):
+    - Kingfisher (~> 7.8.1)
+  - libPhoneNumber-iOS (0.9.15)
+  - Log (2.0)
+  - lottie-ios (4.5.1)
+  - MaterialComponents/AnimationTiming (102.0.0)
+  - MaterialComponents/private/Math (102.0.0)
+  - MaterialComponents/TextControls (102.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+  - MDFInternationalization (3.0.0)
+  - Realm (10.7.7):
+    - Realm/Headers (= 10.7.7)
+  - Realm/Headers (10.7.7)
+  - RealmSwift (10.7.7):
+    - Realm (= 10.7.7)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxBlocking (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - RxTest (6.1.0):
+    - RxSwift (= 6.1.0)
+  - Swinject (2.7.1)
+  - Wormholy (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.4)
+  - Kingfisher (~> 7.8.1)
+  - KingfisherSVG (~> 1.0.0)
+  - libPhoneNumber-iOS (~> 0.9.15)
+  - Log
+  - lottie-ios
+  - MaterialComponents/TextControls
+  - RealmSwift (~> 10.7.0)
+  - RxAlamofire (~> 6.1.1)
+  - RxBlocking (~> 6.1.0)
+  - RxDataSources (~> 5.0.0)
+  - RxGesture (~> 4.0.0)
+  - RxSwift (~> 6.1.0)
+  - RxTest (~> 6.1.0)
+  - Swinject (~> 2.7.1)
+  - Wormholy
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Kingfisher
+    - KingfisherSVG
+    - libPhoneNumber-iOS
+    - Log
+    - lottie-ios
+    - MaterialComponents
+    - MDFInternationalization
+    - Realm
+    - RealmSwift
+    - RxAlamofire
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - Swinject
+    - Wormholy
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
+  KingfisherSVG: 6b991d599ae5b1220b6cbb78c02cc30f566a12eb
+  libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
+  Log: 73fab10e8b88f15cef5f322b12c9be87cf19ee6e
+  lottie-ios: 248b380fa1b97d18e792c37d90da7ab2aa0d6562
+  MaterialComponents: 4b31f682e9c6e8ccbf4f85b479556aa8bd23ffe9
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  Realm: 8010af8b7a576ba501729bcbc54a3cd1f1f7dca3
+  RealmSwift: dc17e6d649c12a8996f9e962c3fe6cef356885c4
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxBlocking: 602095fba0bce7b16b56ccec89edf780c248b7d9
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  RxTest: 9d26616eaff4a7e75f4ecae9b2c24840f2e8218d
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  Wormholy: ab1c8c2f02f58587a0941deb0088555ffbf039a1
+
+PODFILE CHECKSUM: cfbe91ed29425bc6a9cd44b89f9ce31aa59c2e52
+
+COCOAPODS: 1.16.2

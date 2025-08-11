@@ -6,6 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		013E2CF72E4376A4003B9863 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 013E2CF62E4376A4003B9863 /* FirebaseMessaging */; };
+		016E8F0B2E4221FF0054E224 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F0A2E4221FF0054E224 /* IQKeyboardManagerSwift */; };
+		016E8F0E2E4222650054E224 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F0D2E4222650054E224 /* FirebaseAuth */; };
+		016E8F102E4222650054E224 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F0F2E4222650054E224 /* FirebaseCore */; };
+		016E8F122E4222650054E224 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F112E4222650054E224 /* FirebaseDatabase */; };
+		016E8F142E4222650054E224 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F132E4222650054E224 /* FirebaseFirestore */; };
+		016E8F162E4222650054E224 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F152E4222650054E224 /* FirebaseRemoteConfig */; };
+		016E8F182E4222650054E224 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 016E8F172E4222650054E224 /* FirebaseStorage */; };
+		017E8B392E42279700653733 /* CoinRankingCryptoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */; };
+		017E8B432E42279700653733 /* CoinRankingCryptoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */; };
+		017E8B442E42279700653733 /* CoinRankingCryptoDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		017E8B5A2E4227AC00653733 /* CoinRankingCryptoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */; };
+		017E8B642E4227AC00653733 /* CoinRankingCryptoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */; };
+		017E8B652E4227AC00653733 /* CoinRankingCryptoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		019764662E4356DF00AC8F2D /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 019764652E4356DF00AC8F2D /* Reachability */; };
+		019764702E435E6C00AC8F2D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0197646F2E435E6C00AC8F2D /* KeychainSwift */; };
+		019A5A342E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */; };
+		019A5A3E2E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */; };
+		019A5A3F2E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01CA08C12E449D900002B291 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 01CA08C02E449D900002B291 /* SnapKit */; };
+		01CA08D82E44A0460002B291 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 01CA08D72E44A0460002B291 /* DGCharts */; };
+		0B8E10EBD25B11942B77641A /* Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26511B56EAAEBD3EB9423ECC /* Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework */; };
+		1255E0CDE416E4C134BE9D7A /* Pods_CoinRankingCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27D7D2509F2694B60BFC5AA /* Pods_CoinRankingCrypto.framework */; };
+		14A6C3E73EE3EF341A07BB2E /* Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6EEC72C64177B0C3D7A838 /* Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework */; };
+		2DFA1A0CC918CCE56279C9F4 /* Pods_CoinRankingCryptoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D034C847A122FE03091E8453 /* Pods_CoinRankingCryptoData.framework */; };
+		8E95FBC7CF826CA20720A9FB /* Pods_CoinRankingCryptoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4569A842313B1F355292B40C /* Pods_CoinRankingCryptoDomain.framework */; };
+		CFE05FD70D90882501B19221 /* Pods_CoinRankingCryptoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF26E2BE990DD63782134B6 /* Pods_CoinRankingCryptoTests.framework */; };
+		EED389D84494740AD19CCFB4 /* Pods_CoinRankingCryptoDependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD76586C28B6417CD3A4C228 /* Pods_CoinRankingCryptoDependencyInjection.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		016E8EB32E4220D40054E224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +52,118 @@
 			remoteGlobalIDString = 016E8E9B2E4220CF0054E224;
 			remoteInfo = CoinRankingCrypto;
 		};
+		017E8B3A2E42279700653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017E8B2F2E42279600653733;
+			remoteInfo = CoinRankingCryptoDomain;
+		};
+		017E8B3C2E42279700653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016E8E9B2E4220CF0054E224;
+			remoteInfo = CoinRankingCrypto;
+		};
+		017E8B412E42279700653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017E8B2F2E42279600653733;
+			remoteInfo = CoinRankingCryptoDomain;
+		};
+		017E8B5B2E4227AC00653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017E8B502E4227AC00653733;
+			remoteInfo = CoinRankingCryptoData;
+		};
+		017E8B5D2E4227AC00653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016E8E9B2E4220CF0054E224;
+			remoteInfo = CoinRankingCrypto;
+		};
+		017E8B622E4227AC00653733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 017E8B502E4227AC00653733;
+			remoteInfo = CoinRankingCryptoData;
+		};
+		019A5A352E434BB200EA9E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 019A5A2A2E434BB100EA9E8F;
+			remoteInfo = CoinRankingCryptoDependencyInjection;
+		};
+		019A5A372E434BB200EA9E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 016E8E9B2E4220CF0054E224;
+			remoteInfo = CoinRankingCrypto;
+		};
+		019A5A3C2E434BB200EA9E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E8E942E4220CF0054E224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 019A5A2A2E434BB100EA9E8F;
+			remoteInfo = CoinRankingCryptoDependencyInjection;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		017E8B482E42279700653733 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				017E8B442E42279700653733 /* CoinRankingCryptoDomain.framework in Embed Frameworks */,
+				019A5A3F2E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Embed Frameworks */,
+				017E8B652E4227AC00653733 /* CoinRankingCryptoData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		016E8E9C2E4220CF0054E224 /* CoinRankingCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinRankingCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		016E8EB22E4220D40054E224 /* CoinRankingCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankingCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016E8EBC2E4220D40054E224 /* CoinRankingCryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankingCryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinRankingCryptoDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		017E8B382E42279700653733 /* CoinRankingCryptoDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankingCryptoDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinRankingCryptoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		017E8B592E4227AC00653733 /* CoinRankingCryptoDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankingCryptoDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoinRankingCryptoDependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A5A332E434BB200EA9E8F /* CoinRankingCryptoDependencyInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankingCryptoDependencyInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E171AD3EDB6216430EEA90 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EF806A4984A092AB249E6CB /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.release.xcconfig"; sourceTree = "<group>"; };
+		26511B56EAAEBD3EB9423ECC /* Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F72F2878237FCDCB82AAC22 /* Pods-CoinRankingCryptoData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoData.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoData/Pods-CoinRankingCryptoData.release.xcconfig"; sourceTree = "<group>"; };
+		321894E5DA2110232FBF2C0F /* Pods-CoinRankingCryptoDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDomain.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDomain/Pods-CoinRankingCryptoDomain.release.xcconfig"; sourceTree = "<group>"; };
+		32EC1D57F64C58CA71105019 /* Pods-CoinRankingCryptoDependencyInjection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDependencyInjection.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDependencyInjection/Pods-CoinRankingCryptoDependencyInjection.debug.xcconfig"; sourceTree = "<group>"; };
+		4569A842313B1F355292B40C /* Pods_CoinRankingCryptoDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0502188CE265ECC339D5E3 /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB9E5AB8DA5712A39884662 /* Pods-CoinRankingCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCrypto.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCrypto/Pods-CoinRankingCrypto.release.xcconfig"; sourceTree = "<group>"; };
+		67378B3A0804763304E843AB /* Pods-CoinRankingCryptoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoTests.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoTests/Pods-CoinRankingCryptoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9938B6A0FE38B79F4BF46B1C /* Pods-CoinRankingCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCrypto.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCrypto/Pods-CoinRankingCrypto.debug.xcconfig"; sourceTree = "<group>"; };
+		A27D7D2509F2694B60BFC5AA /* Pods_CoinRankingCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A592F722E64F72A53EE8F5E5 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4D282F9CEC8653ABC7A7604 /* Pods-CoinRankingCryptoDependencyInjection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDependencyInjection.release.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDependencyInjection/Pods-CoinRankingCryptoDependencyInjection.release.xcconfig"; sourceTree = "<group>"; };
+		B508665246F4F0D4F130539D /* Pods-CoinRankingCryptoData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoData.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoData/Pods-CoinRankingCryptoData.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A1E791A5503B8DE1C091E1 /* Pods-CoinRankingCryptoDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoDomain.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoDomain/Pods-CoinRankingCryptoDomain.debug.xcconfig"; sourceTree = "<group>"; };
+		D034C847A122FE03091E8453 /* Pods_CoinRankingCryptoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D099D180C72D3C285D4BB372 /* Pods-CoinRankingCryptoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinRankingCryptoTests.debug.xcconfig"; path = "Target Support Files/Pods-CoinRankingCryptoTests/Pods-CoinRankingCryptoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD6EEC72C64177B0C3D7A838 /* Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF26E2BE990DD63782134B6 /* Pods_CoinRankingCryptoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD76586C28B6417CD3A4C228 /* Pods_CoinRankingCryptoDependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinRankingCryptoDependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -58,6 +195,31 @@
 			path = CoinRankingCryptoUITests;
 			sourceTree = "<group>";
 		};
+		017E8B312E42279600653733 /* CoinRankingCryptoDomain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinRankingCryptoDomain;
+			sourceTree = "<group>";
+		};
+		017E8B3E2E42279700653733 /* CoinRankingCryptoDomainTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinRankingCryptoDomainTests;
+			sourceTree = "<group>";
+		};
+		017E8B522E4227AC00653733 /* CoinRankingCryptoData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinRankingCryptoData;
+			sourceTree = "<group>";
+		};
+		017E8B5F2E4227AC00653733 /* CoinRankingCryptoDataTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinRankingCryptoDataTests;
+			sourceTree = "<group>";
+		};
+		019A5A2C2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinRankingCryptoDependencyInjection;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +227,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019A5A3E2E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Frameworks */,
+				016E8F122E4222650054E224 /* FirebaseDatabase in Frameworks */,
+				01CA08C12E449D900002B291 /* SnapKit in Frameworks */,
+				016E8F0E2E4222650054E224 /* FirebaseAuth in Frameworks */,
+				016E8F162E4222650054E224 /* FirebaseRemoteConfig in Frameworks */,
+				017E8B432E42279700653733 /* CoinRankingCryptoDomain.framework in Frameworks */,
+				016E8F102E4222650054E224 /* FirebaseCore in Frameworks */,
+				016E8F182E4222650054E224 /* FirebaseStorage in Frameworks */,
+				013E2CF72E4376A4003B9863 /* FirebaseMessaging in Frameworks */,
+				016E8F0B2E4221FF0054E224 /* IQKeyboardManagerSwift in Frameworks */,
+				016E8F142E4222650054E224 /* FirebaseFirestore in Frameworks */,
+				017E8B642E4227AC00653733 /* CoinRankingCryptoData.framework in Frameworks */,
+				01CA08D82E44A0460002B291 /* DGCharts in Frameworks */,
+				1255E0CDE416E4C134BE9D7A /* Pods_CoinRankingCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE05FD70D90882501B19221 /* Pods_CoinRankingCryptoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +256,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B2D2E42279600653733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E95FBC7CF826CA20720A9FB /* Pods_CoinRankingCryptoDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B352E42279700653733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017E8B392E42279700653733 /* CoinRankingCryptoDomain.framework in Frameworks */,
+				0B8E10EBD25B11942B77641A /* Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B4E2E4227AC00653733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019764702E435E6C00AC8F2D /* KeychainSwift in Frameworks */,
+				019764662E4356DF00AC8F2D /* Reachability in Frameworks */,
+				2DFA1A0CC918CCE56279C9F4 /* Pods_CoinRankingCryptoData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B562E4227AC00653733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017E8B5A2E4227AC00653733 /* CoinRankingCryptoData.framework in Frameworks */,
+				14A6C3E73EE3EF341A07BB2E /* Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A282E434BB100EA9E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED389D84494740AD19CCFB4 /* Pods_CoinRankingCryptoDependencyInjection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A302E434BB200EA9E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A5A342E434BB200EA9E8F /* CoinRankingCryptoDependencyInjection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +320,14 @@
 				016E8E9E2E4220CF0054E224 /* CoinRankingCrypto */,
 				016E8EB52E4220D40054E224 /* CoinRankingCryptoTests */,
 				016E8EBF2E4220D40054E224 /* CoinRankingCryptoUITests */,
+				017E8B312E42279600653733 /* CoinRankingCryptoDomain */,
+				017E8B3E2E42279700653733 /* CoinRankingCryptoDomainTests */,
+				017E8B522E4227AC00653733 /* CoinRankingCryptoData */,
+				017E8B5F2E4227AC00653733 /* CoinRankingCryptoDataTests */,
+				019A5A2C2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */,
 				016E8E9D2E4220CF0054E224 /* Products */,
+				A79455BC26F85E957FF1A495 /* Pods */,
+				666DC4F465E7D42705184772 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,30 +337,111 @@
 				016E8E9C2E4220CF0054E224 /* CoinRankingCrypto.app */,
 				016E8EB22E4220D40054E224 /* CoinRankingCryptoTests.xctest */,
 				016E8EBC2E4220D40054E224 /* CoinRankingCryptoUITests.xctest */,
+				017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */,
+				017E8B382E42279700653733 /* CoinRankingCryptoDomainTests.xctest */,
+				017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */,
+				017E8B592E4227AC00653733 /* CoinRankingCryptoDataTests.xctest */,
+				019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */,
+				019A5A332E434BB200EA9E8F /* CoinRankingCryptoDependencyInjectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		666DC4F465E7D42705184772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A27D7D2509F2694B60BFC5AA /* Pods_CoinRankingCrypto.framework */,
+				D034C847A122FE03091E8453 /* Pods_CoinRankingCryptoData.framework */,
+				DD6EEC72C64177B0C3D7A838 /* Pods_CoinRankingCryptoData_CoinRankingCryptoDataTests.framework */,
+				4569A842313B1F355292B40C /* Pods_CoinRankingCryptoDomain.framework */,
+				26511B56EAAEBD3EB9423ECC /* Pods_CoinRankingCryptoDomain_CoinRankingCryptoDomainTests.framework */,
+				EFF26E2BE990DD63782134B6 /* Pods_CoinRankingCryptoTests.framework */,
+				FD76586C28B6417CD3A4C228 /* Pods_CoinRankingCryptoDependencyInjection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A79455BC26F85E957FF1A495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9938B6A0FE38B79F4BF46B1C /* Pods-CoinRankingCrypto.debug.xcconfig */,
+				5BB9E5AB8DA5712A39884662 /* Pods-CoinRankingCrypto.release.xcconfig */,
+				B508665246F4F0D4F130539D /* Pods-CoinRankingCryptoData.debug.xcconfig */,
+				2F72F2878237FCDCB82AAC22 /* Pods-CoinRankingCryptoData.release.xcconfig */,
+				02E171AD3EDB6216430EEA90 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.debug.xcconfig */,
+				A592F722E64F72A53EE8F5E5 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.release.xcconfig */,
+				B6A1E791A5503B8DE1C091E1 /* Pods-CoinRankingCryptoDomain.debug.xcconfig */,
+				321894E5DA2110232FBF2C0F /* Pods-CoinRankingCryptoDomain.release.xcconfig */,
+				5A0502188CE265ECC339D5E3 /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.debug.xcconfig */,
+				0EF806A4984A092AB249E6CB /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.release.xcconfig */,
+				D099D180C72D3C285D4BB372 /* Pods-CoinRankingCryptoTests.debug.xcconfig */,
+				67378B3A0804763304E843AB /* Pods-CoinRankingCryptoTests.release.xcconfig */,
+				32EC1D57F64C58CA71105019 /* Pods-CoinRankingCryptoDependencyInjection.debug.xcconfig */,
+				B4D282F9CEC8653ABC7A7604 /* Pods-CoinRankingCryptoDependencyInjection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		017E8B2B2E42279600653733 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B4C2E4227AC00653733 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A262E434BB100EA9E8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 016E8EC52E4220D40054E224 /* Build configuration list for PBXNativeTarget "CoinRankingCrypto" */;
 			buildPhases = (
+				951D1725F5ADAE500E4F9ADB /* [CP] Check Pods Manifest.lock */,
 				016E8E982E4220CF0054E224 /* Sources */,
 				016E8E992E4220CF0054E224 /* Frameworks */,
 				016E8E9A2E4220CF0054E224 /* Resources */,
+				017E8B482E42279700653733 /* Embed Frameworks */,
+				34C6B6C76244CA82093E9C99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				017E8B422E42279700653733 /* PBXTargetDependency */,
+				017E8B632E4227AC00653733 /* PBXTargetDependency */,
+				019A5A3D2E434BB200EA9E8F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				016E8E9E2E4220CF0054E224 /* CoinRankingCrypto */,
 			);
 			name = CoinRankingCrypto;
 			packageProductDependencies = (
+				016E8F0A2E4221FF0054E224 /* IQKeyboardManagerSwift */,
+				016E8F0D2E4222650054E224 /* FirebaseAuth */,
+				016E8F0F2E4222650054E224 /* FirebaseCore */,
+				016E8F112E4222650054E224 /* FirebaseDatabase */,
+				016E8F132E4222650054E224 /* FirebaseFirestore */,
+				016E8F152E4222650054E224 /* FirebaseRemoteConfig */,
+				016E8F172E4222650054E224 /* FirebaseStorage */,
+				013E2CF62E4376A4003B9863 /* FirebaseMessaging */,
+				01CA08C02E449D900002B291 /* SnapKit */,
+				01CA08D72E44A0460002B291 /* DGCharts */,
 			);
 			productName = CoinRankingCrypto;
 			productReference = 016E8E9C2E4220CF0054E224 /* CoinRankingCrypto.app */;
@@ -134,9 +451,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 016E8ECA2E4220D40054E224 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoTests" */;
 			buildPhases = (
+				9B99466093A6526D779DC246 /* [CP] Check Pods Manifest.lock */,
 				016E8EAE2E4220D40054E224 /* Sources */,
 				016E8EAF2E4220D40054E224 /* Frameworks */,
 				016E8EB02E4220D40054E224 /* Resources */,
+				2291131951109F81574F7AF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,8 +466,6 @@
 				016E8EB52E4220D40054E224 /* CoinRankingCryptoTests */,
 			);
 			name = CoinRankingCryptoTests;
-			packageProductDependencies = (
-			);
 			productName = CoinRankingCryptoTests;
 			productReference = 016E8EB22E4220D40054E224 /* CoinRankingCryptoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,11 +487,146 @@
 				016E8EBF2E4220D40054E224 /* CoinRankingCryptoUITests */,
 			);
 			name = CoinRankingCryptoUITests;
-			packageProductDependencies = (
-			);
 			productName = CoinRankingCryptoUITests;
 			productReference = 016E8EBC2E4220D40054E224 /* CoinRankingCryptoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		017E8B2F2E42279600653733 /* CoinRankingCryptoDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017E8B452E42279700653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDomain" */;
+			buildPhases = (
+				B81D622FF3D04009937FB260 /* [CP] Check Pods Manifest.lock */,
+				017E8B2B2E42279600653733 /* Headers */,
+				017E8B2C2E42279600653733 /* Sources */,
+				017E8B2D2E42279600653733 /* Frameworks */,
+				017E8B2E2E42279600653733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				017E8B312E42279600653733 /* CoinRankingCryptoDomain */,
+			);
+			name = CoinRankingCryptoDomain;
+			productName = CoinRankingCryptoDomain;
+			productReference = 017E8B302E42279600653733 /* CoinRankingCryptoDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		017E8B372E42279700653733 /* CoinRankingCryptoDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017E8B492E42279700653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDomainTests" */;
+			buildPhases = (
+				7B38ED85AD0ABDEE6E0036FC /* [CP] Check Pods Manifest.lock */,
+				017E8B342E42279700653733 /* Sources */,
+				017E8B352E42279700653733 /* Frameworks */,
+				017E8B362E42279700653733 /* Resources */,
+				082A3803E95E4022A9290937 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017E8B3B2E42279700653733 /* PBXTargetDependency */,
+				017E8B3D2E42279700653733 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				017E8B3E2E42279700653733 /* CoinRankingCryptoDomainTests */,
+			);
+			name = CoinRankingCryptoDomainTests;
+			productName = CoinRankingCryptoDomainTests;
+			productReference = 017E8B382E42279700653733 /* CoinRankingCryptoDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		017E8B502E4227AC00653733 /* CoinRankingCryptoData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017E8B662E4227AC00653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoData" */;
+			buildPhases = (
+				BE9C4942CC247CF4ABC16BA8 /* [CP] Check Pods Manifest.lock */,
+				017E8B4C2E4227AC00653733 /* Headers */,
+				017E8B4D2E4227AC00653733 /* Sources */,
+				017E8B4E2E4227AC00653733 /* Frameworks */,
+				017E8B4F2E4227AC00653733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				017E8B522E4227AC00653733 /* CoinRankingCryptoData */,
+			);
+			name = CoinRankingCryptoData;
+			packageProductDependencies = (
+				019764652E4356DF00AC8F2D /* Reachability */,
+				0197646F2E435E6C00AC8F2D /* KeychainSwift */,
+			);
+			productName = CoinRankingCryptoData;
+			productReference = 017E8B512E4227AC00653733 /* CoinRankingCryptoData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		017E8B582E4227AC00653733 /* CoinRankingCryptoDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017E8B692E4227AC00653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDataTests" */;
+			buildPhases = (
+				0BD88542D134F623C83946A8 /* [CP] Check Pods Manifest.lock */,
+				017E8B552E4227AC00653733 /* Sources */,
+				017E8B562E4227AC00653733 /* Frameworks */,
+				017E8B572E4227AC00653733 /* Resources */,
+				CA1CF9AA5E1B057CF0320886 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				017E8B5C2E4227AC00653733 /* PBXTargetDependency */,
+				017E8B5E2E4227AC00653733 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				017E8B5F2E4227AC00653733 /* CoinRankingCryptoDataTests */,
+			);
+			name = CoinRankingCryptoDataTests;
+			productName = CoinRankingCryptoDataTests;
+			productReference = 017E8B592E4227AC00653733 /* CoinRankingCryptoDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		019A5A2A2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A5A442E434BB200EA9E8F /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDependencyInjection" */;
+			buildPhases = (
+				37F2820B020677BE6346E239 /* [CP] Check Pods Manifest.lock */,
+				019A5A262E434BB100EA9E8F /* Headers */,
+				019A5A272E434BB100EA9E8F /* Sources */,
+				019A5A282E434BB100EA9E8F /* Frameworks */,
+				019A5A292E434BB100EA9E8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				019A5A2C2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */,
+			);
+			name = CoinRankingCryptoDependencyInjection;
+			productName = CoinRankingCryptoDependencyInjection;
+			productReference = 019A5A2B2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		019A5A322E434BB200EA9E8F /* CoinRankingCryptoDependencyInjectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A5A452E434BB200EA9E8F /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDependencyInjectionTests" */;
+			buildPhases = (
+				019A5A2F2E434BB200EA9E8F /* Sources */,
+				019A5A302E434BB200EA9E8F /* Frameworks */,
+				019A5A312E434BB200EA9E8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				019A5A362E434BB200EA9E8F /* PBXTargetDependency */,
+				019A5A382E434BB200EA9E8F /* PBXTargetDependency */,
+			);
+			name = CoinRankingCryptoDependencyInjectionTests;
+			productName = CoinRankingCryptoDependencyInjectionTests;
+			productReference = 019A5A332E434BB200EA9E8F /* CoinRankingCryptoDependencyInjectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,6 +649,27 @@
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = 016E8E9B2E4220CF0054E224;
 					};
+					017E8B2F2E42279600653733 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					017E8B372E42279700653733 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 016E8E9B2E4220CF0054E224;
+					};
+					017E8B502E4227AC00653733 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					017E8B582E4227AC00653733 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 016E8E9B2E4220CF0054E224;
+					};
+					019A5A2A2E434BB100EA9E8F = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					019A5A322E434BB200EA9E8F = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 016E8E9B2E4220CF0054E224;
+					};
 				};
 			};
 			buildConfigurationList = 016E8E972E4220CF0054E224 /* Build configuration list for PBXProject "CoinRankingCrypto" */;
@@ -205,9 +678,19 @@
 			knownRegions = (
 				en,
 				Base,
+				"sw-KE",
 			);
 			mainGroup = 016E8E932E4220CF0054E224;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				016E8F092E4221FF0054E224 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				019764642E4356DF00AC8F2D /* XCRemoteSwiftPackageReference "Reachability" */,
+				0197646A2E435AB300AC8F2D /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				0197646E2E435E6C00AC8F2D /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				01CA08BF2E449D900002B291 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				01CA08D62E44A0460002B291 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 016E8E9D2E4220CF0054E224 /* Products */;
 			projectDirPath = "";
@@ -216,6 +699,12 @@
 				016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */,
 				016E8EB12E4220D40054E224 /* CoinRankingCryptoTests */,
 				016E8EBB2E4220D40054E224 /* CoinRankingCryptoUITests */,
+				017E8B2F2E42279600653733 /* CoinRankingCryptoDomain */,
+				017E8B372E42279700653733 /* CoinRankingCryptoDomainTests */,
+				017E8B502E4227AC00653733 /* CoinRankingCryptoData */,
+				017E8B582E4227AC00653733 /* CoinRankingCryptoDataTests */,
+				019A5A2A2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */,
+				019A5A322E434BB200EA9E8F /* CoinRankingCryptoDependencyInjectionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +731,290 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		017E8B2E2E42279600653733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B362E42279700653733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B4F2E4227AC00653733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B572E4227AC00653733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A292E434BB100EA9E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A312E434BB200EA9E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		082A3803E95E4022A9290937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BD88542D134F623C83946A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2291131951109F81574F7AF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoTests/Pods-CoinRankingCryptoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoTests/Pods-CoinRankingCryptoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoTests/Pods-CoinRankingCryptoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34C6B6C76244CA82093E9C99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCrypto/Pods-CoinRankingCrypto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCrypto/Pods-CoinRankingCrypto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCrypto/Pods-CoinRankingCrypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F2820B020677BE6346E239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoDependencyInjection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B38ED85AD0ABDEE6E0036FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		951D1725F5ADAE500E4F9ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCrypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B99466093A6526D779DC246 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B81D622FF3D04009937FB260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoDomain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9C4942CC247CF4ABC16BA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinRankingCryptoData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1CF9AA5E1B057CF0320886 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests/Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		016E8E982E4220CF0054E224 /* Sources */ = {
@@ -266,6 +1038,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		017E8B2C2E42279600653733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B342E42279700653733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B4D2E4227AC00653733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		017E8B552E4227AC00653733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A272E434BB100EA9E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		019A5A2F2E434BB200EA9E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -279,24 +1093,74 @@
 			target = 016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */;
 			targetProxy = 016E8EBD2E4220D40054E224 /* PBXContainerItemProxy */;
 		};
+		017E8B3B2E42279700653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017E8B2F2E42279600653733 /* CoinRankingCryptoDomain */;
+			targetProxy = 017E8B3A2E42279700653733 /* PBXContainerItemProxy */;
+		};
+		017E8B3D2E42279700653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */;
+			targetProxy = 017E8B3C2E42279700653733 /* PBXContainerItemProxy */;
+		};
+		017E8B422E42279700653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017E8B2F2E42279600653733 /* CoinRankingCryptoDomain */;
+			targetProxy = 017E8B412E42279700653733 /* PBXContainerItemProxy */;
+		};
+		017E8B5C2E4227AC00653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017E8B502E4227AC00653733 /* CoinRankingCryptoData */;
+			targetProxy = 017E8B5B2E4227AC00653733 /* PBXContainerItemProxy */;
+		};
+		017E8B5E2E4227AC00653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */;
+			targetProxy = 017E8B5D2E4227AC00653733 /* PBXContainerItemProxy */;
+		};
+		017E8B632E4227AC00653733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 017E8B502E4227AC00653733 /* CoinRankingCryptoData */;
+			targetProxy = 017E8B622E4227AC00653733 /* PBXContainerItemProxy */;
+		};
+		019A5A362E434BB200EA9E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 019A5A2A2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */;
+			targetProxy = 019A5A352E434BB200EA9E8F /* PBXContainerItemProxy */;
+		};
+		019A5A382E434BB200EA9E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 016E8E9B2E4220CF0054E224 /* CoinRankingCrypto */;
+			targetProxy = 019A5A372E434BB200EA9E8F /* PBXContainerItemProxy */;
+		};
+		019A5A3D2E434BB200EA9E8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 019A5A2A2E434BB100EA9E8F /* CoinRankingCryptoDependencyInjection */;
+			targetProxy = 019A5A3C2E434BB200EA9E8F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		016E8EC62E4220D40054E224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9938B6A0FE38B79F4BF46B1C /* Pods-CoinRankingCrypto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoinRankingCrypto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Blockto;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,27 +1168,36 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		016E8EC72E4220D40054E224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB9E5AB8DA5712A39884662 /* Pods-CoinRankingCrypto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoinRankingCrypto/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Blockto;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,9 +1205,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -461,38 +1338,48 @@
 		};
 		016E8ECB2E4220D40054E224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D099D180C72D3C285D4BB372 /* Pods-CoinRankingCryptoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
 			};
 			name = Debug;
 		};
 		016E8ECC2E4220D40054E224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67378B3A0804763304E843AB /* Pods-CoinRankingCryptoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
 			};
 			name = Release;
@@ -504,12 +1391,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = CoinRankingCrypto;
 			};
 			name = Debug;
@@ -521,13 +1413,400 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BC38Q2W25W;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = CoinRankingCrypto;
+			};
+			name = Release;
+		};
+		017E8B462E42279700653733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A1E791A5503B8DE1C091E1 /* Pods-CoinRankingCryptoDomain.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		017E8B472E42279700653733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 321894E5DA2110232FBF2C0F /* Pods-CoinRankingCryptoDomain.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		017E8B4A2E42279700653733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0502188CE265ECC339D5E3 /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
+			};
+			name = Debug;
+		};
+		017E8B4B2E42279700653733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF806A4984A092AB249E6CB /* Pods-CoinRankingCryptoDomain-CoinRankingCryptoDomainTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
+			};
+			name = Release;
+		};
+		017E8B672E4227AC00653733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B508665246F4F0D4F130539D /* Pods-CoinRankingCryptoData.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		017E8B682E4227AC00653733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F72F2878237FCDCB82AAC22 /* Pods-CoinRankingCryptoData.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		017E8B6A2E4227AC00653733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02E171AD3EDB6216430EEA90 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
+			};
+			name = Debug;
+		};
+		017E8B6B2E4227AC00653733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A592F722E64F72A53EE8F5E5 /* Pods-CoinRankingCryptoData-CoinRankingCryptoDataTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
+			};
+			name = Release;
+		};
+		019A5A402E434BB200EA9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32EC1D57F64C58CA71105019 /* Pods-CoinRankingCryptoDependencyInjection.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDependencyInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		019A5A412E434BB200EA9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D282F9CEC8653ABC7A7604 /* Pods-CoinRankingCryptoDependencyInjection.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDependencyInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		019A5A422E434BB200EA9E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
+			};
+			name = Debug;
+		};
+		019A5A432E434BB200EA9E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BC38Q2W25W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolas.CoinRankingCryptoDependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinRankingCrypto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinRankingCrypto";
 			};
 			name = Release;
 		};
@@ -570,7 +1849,183 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		017E8B452E42279700653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017E8B462E42279700653733 /* Debug */,
+				017E8B472E42279700653733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017E8B492E42279700653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017E8B4A2E42279700653733 /* Debug */,
+				017E8B4B2E42279700653733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017E8B662E4227AC00653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017E8B672E4227AC00653733 /* Debug */,
+				017E8B682E4227AC00653733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017E8B692E4227AC00653733 /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017E8B6A2E4227AC00653733 /* Debug */,
+				017E8B6B2E4227AC00653733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019A5A442E434BB200EA9E8F /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDependencyInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A5A402E434BB200EA9E8F /* Debug */,
+				019A5A412E434BB200EA9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019A5A452E434BB200EA9E8F /* Build configuration list for PBXNativeTarget "CoinRankingCryptoDependencyInjectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A5A422E434BB200EA9E8F /* Debug */,
+				019A5A432E434BB200EA9E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		016E8F092E4221FF0054E224 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+		016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+		019764642E4356DF00AC8F2D /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		0197646A2E435AB300AC8F2D /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.59.1;
+			};
+		};
+		0197646E2E435E6C00AC8F2D /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		01CA08BF2E449D900002B291 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		01CA08D62E44A0460002B291 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		013E2CF62E4376A4003B9863 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		016E8F0A2E4221FF0054E224 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F092E4221FF0054E224 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		016E8F0D2E4222650054E224 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		016E8F0F2E4222650054E224 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		016E8F112E4222650054E224 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		016E8F132E4222650054E224 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		016E8F152E4222650054E224 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		016E8F172E4222650054E224 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 016E8F0C2E4222650054E224 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		019764652E4356DF00AC8F2D /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 019764642E4356DF00AC8F2D /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		0197646F2E435E6C00AC8F2D /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0197646E2E435E6C00AC8F2D /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		01CA08C02E449D900002B291 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01CA08BF2E449D900002B291 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		01CA08D72E44A0460002B291 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01CA08D62E44A0460002B291 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 016E8E942E4220CF0054E224 /* Project object */;
 }

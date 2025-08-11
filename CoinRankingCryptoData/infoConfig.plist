@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseUrl</key>
+	<string>https://api.coinranking.com/v2/</string>
+	<key>COIN_RANKING_API_KEY</key>
+	<string>coinrankingedfc8469eb83e64212b4833ecf0941d45ec2b0cf8619ed53</string>
+</dict>
+</plist>

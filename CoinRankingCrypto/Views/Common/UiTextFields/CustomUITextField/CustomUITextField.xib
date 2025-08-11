@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomUITextField" customModule="MyPower" customModuleProvider="target">
+            <connections>
+                <outlet property="uiTextField" destination="J6r-6C-onn" id="YEc-LR-DVR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vT5-Gz-3u9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6r-6C-onn" customClass="LeftPaddedRightViewTextField" customModule="MyPower" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="L9f-tD-qO6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ted-fe-KVt"/>
+            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J6r-6C-onn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7nU-3a-kIj"/>
+                <constraint firstItem="J6r-6C-onn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gp8-G4-GFM"/>
+                <constraint firstAttribute="bottom" secondItem="J6r-6C-onn" secondAttribute="bottom" id="LsD-oF-kUe"/>
+                <constraint firstAttribute="trailing" secondItem="J6r-6C-onn" secondAttribute="trailing" id="orp-2y-Gxi"/>
+            </constraints>
+            <point key="canvasLocation" x="-15" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+# Xcode
+xcuserdata/
+
+# Obj-C/Swift specific
+*.hmap
+
+# App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+# .swiftpm
+
+# CocoaPods
+# Pods/           # Uncomment if you want to ignore Pods directory
+# *.xcworkspace   # Uncomment if you want to ignore workspace file
+
+# Carthage
+Carthage/Build/
+# Carthage/Checkouts   # Uncomment if ignoring checkouts
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Secrets and configs
+# Ignore your Info.plist or config files if they contain sensitive keys
+# Info.plist
+# Config.xcconfig
+
+# Build products
+build/
+DerivedData/
+
+# Misc
+*.log
+*.xcuserstate
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+
