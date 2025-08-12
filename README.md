@@ -146,14 +146,16 @@ flowchart TB
         DB[Persistence]
     end
     
-    UI -- Solid: Navigation --> C
-    C -- Solid: Navigation --> UI
-    UI -- Solid: User Actions --> VM
-    VM -. Dashed: Data Flow .-> UC
-    UC -. Dashed: Data Flow .-> R
-    R -. Dashed: Network Calls .-> API
-    R -. Dashed: Local Storage .-> DB
+    UI -->|Navigation| C
+    C -->|Navigation| UI
+    UI -->|User Actions| VM
+    VM -.->|Data Flow| UC
+    UC -.->|Data Flow| R
+    R -.->|Network Calls| API
+    R -.->|Local Storage| DB
     
     style Presentation fill:#fce4ec,stroke:#f06292,stroke-width:2px
     style Domain fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
     style Data fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
+    linkStyle default stroke-width:2px
+    linkStyle 3,4,5,6 stroke:#999,stroke-dasharray: 5 5
