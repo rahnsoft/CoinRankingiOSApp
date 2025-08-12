@@ -1,72 +1,159 @@
-# CoinRankingCrypto iOS App
+# 💰 CoinRankingCrypto iOS App
 
-## Overview
+## 📖 Overview
 
-This iOS application fetches cryptocurrency data from the CoinRanking API and provides a rich user experience including:
+An iOS application that fetches cryptocurrency data from the **CoinRanking API** and delivers a rich, secure, and responsive user experience.
 
-- Splash screen, Get Started onboarding, and Login screens  
-- List of top 100 coins with pagination and filtering  
-- Swipe left to favorite/unfavorite coins  
-- Detailed coin views with performance charts and filters  
-- Favorites screen listing all saved coins  
-- Support for both Light Mode and Dark Mode  
+### ✨ Highlights
+- 🖼 **Splash Screen & Onboarding** — Smooth SwiftUI transitions  
+- 📋 **Top 100 Coins List** — Pagination, sorting, and filtering  
+- ⭐ **Favorites Management** — Swipe to favorite/unfavorite coins  
+- 📈 **Detailed Coin View** — Price history charts and statistics  
+- 🌙 **Dark & Light Mode** — Full system appearance support  
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
 
 - **Language:** Swift 5+  
 - **UI Frameworks:**  
-  - UIKit for main views (lists, navigation, interactions)  
-  - SwiftUI for modular views (onboarding screens, charts, detail components)  
-- **Networking:** RxAlamofire for reactive REST API requests  
-- **Reactive Programming:** RxSwift for async data streams and bindings  
-- **Layout:** SnapKit for programmatic UI constraints in UIKit views  
-- **Charts:** DGCharts for displaying coin performance graphs  
+  - UIKit for main lists, navigation, and interactions  
+  - SwiftUI for onboarding, charts, and modular components  
+- **Architecture:**  
+  - **MVVM + Coordinator (MVVM+C)** combined with **Clean Architecture**  
+  - MVVM for separation of concerns and reactive data binding  
+  - Coordinators for navigation flow control  
+  - Clean Architecture for strict separation between presentation, domain, and data layers  
+- **Networking:**  
+  - Alamofire with **SSL Pinning**  
+  - All API calls over HTTPS with enforced TLS  
+  - Combine for reactive streams  
+- **Reactive Programming:** Combine for data binding & state updates  
+- **Layout:** SnapKit for programmatic constraints in UIKit  
+- **Charts:** DGCharts for historical price data visualization  
 - **Persistence:**  
-  - UserDefaults for simple local storage (favorites, UUIDs)  
-  - Keychain used alongside config files to securely store the API key at runtime  
-- **Dependency Injection:** Applied for modularity and ease of testing  
+  - `UserDefaults` for non-sensitive data (favorites UUIDs)  
+  - Keychain for secure API key storage  
+- **Compiler Hardening:**  
+  - `-fstack-protector-all` flag for stack canaries (verified with `otool`)  
+- **Dependency Management:**  
+  - **Mix of Swift Package Manager (SPM) & CocoaPods**  
+  - **Why?**  
+    - 📦 **SPM** for lightweight, actively maintained libraries with native Xcode integration  
+    - 🔧 **CocoaPods** for packages lacking robust SPM support or needing custom build configurations  
+    - 🔄 Hybrid approach ensures **maximum compatibility, flexibility, and stability**  
 
-## Architecture
+---
 
-This project follows a **MVVM + Coordinator (MVVM+C)** pattern combined with **Clean Architecture** principles to ensure a scalable, maintainable, and testable codebase.
+## 🏗 Architecture
 
-- **MVVM (Model-View-ViewModel):**  
-  Separates UI logic from business logic, enabling clear data binding and reactive updates. This improves code clarity and testability—crucial for handling real-time data in a fintech environment.
+This app follows **MVVM + Coordinator** with **Clean Architecture** principles.
 
-- **Coordinator Pattern:**  
-  Manages navigation and flow logic outside of view controllers, keeping the UI components lightweight and focused on their presentation responsibilities. This makes onboarding, login, and complex screen flows easier to manage and extend.
+**Why this matters for fintech apps:**
+- 🛡 **Robustness:** Prevents accidental coupling & unintended side effects  
+- 🧪 **Testability:** Core business rules can be tested without UI dependencies  
+- 📈 **Scalability:** Add features or new data sources without breaking existing ones  
+- 🛠 **Maintainability:** Modular design makes updates safer and faster  
 
-- **Clean Architecture:**  
-  Enforces separation of concerns between domain, data, and presentation layers. This promotes modularity and flexibility, allowing independent development and testing of core business rules, which is vital for the security and reliability required in financial apps.
+**Structure:**
+- **Domain Layer:** Use cases, business rules, and core entities  
+- **Data Layer:** Networking clients, repositories, and persistence adapters  
+- **Presentation Layer:** UIKit/SwiftUI views, ViewModels, and Coordinators  
 
-**Why this architecture for a fintech app?**  
-Financial applications demand high reliability, security, and maintainability. By structuring the codebase with MVVM+C and Clean Architecture, we achieve:  
-- **Robustness:** Clear boundaries reduce bugs and unintended side-effects.  
-- **Testability:** Domain logic can be thoroughly unit tested without UI dependencies.  
-- **Scalability:** Easy to add features like new screens, authentication flows, or external services.  
-- **Maintainability:** Code is easier to understand and modify, which is critical for evolving fintech requirements.
+---
 
-## Features & Flow
+## 🔒 Security Considerations
 
-- Splash & Onboarding: Animated splash and multi-step Get Started screens using SwiftUI  
-- Login: Basic login implemented with sanity checks; currently accepts any input (Firebase OTP validation planned)  
-- Top 100 Coins List:  
-  - Pagination with 20 coins per page  
-  - Sorting/filtering by price and 24-hour performance  
-  - Swipe-to-favorite coins  
-- Coin Details: Performance chart with selectable time filters and detailed statistics  
-- Favorites Screen: View and manage favorite coins with swipe-to-unfavorite support  
-- Dark Mode: Full support following system appearance settings  
+Security is critical in fintech and cryptocurrency apps. This project implements:
 
-## Known Limitations
+- **🔑 API Key Protection:**  
+  - API key securely stored in **Keychain**  
+  - Loaded at runtime from a configuration file excluded from version control  
 
-- Firebase OTP validation for login is not yet integrated due to time constraints; current login performs basic sanity checks only  
-- No offline caching or advanced local persistence beyond UserDefaults  
-- Error handling on login and network failures could be improved  
+- **🛡 SSL Pinning:**  
+  - Alamofire ensures communication only with trusted CoinRanking servers  
+  - Mitigates man-in-the-middle (MITM) attacks  
 
-## Build & Run Instructions
+- **🔐 Compiler Hardening:**  
+  - `-fstack-protector-all` enabled to insert stack canaries into **all functions**  
+  - Verified with:
+    ```bash
+    otool -Iv AppName | grep stack
+    ```
 
-1. Clone the repo:  
+- **📦 Minimal Local Storage:**  
+  - Only non-sensitive UUIDs for favorites are stored in `UserDefaults`  
+  - No tokens, private keys, or personal data stored locally  
+
+**Recommended for production:**
+- 🛡 **DexGuard** — Code/resource obfuscation to prevent reverse engineering  
+- 📊 **Dynatrace** — Real-time performance and anomaly monitoring  
+- 🔒 **Encrypted Offline Caching** — Secure local data storage  
+- 👤 **Biometric Authentication** — Face ID/Touch ID for sensitive actions  
+- 🚫 **Jailbreak Detection** — Prevent execution on compromised devices  
+
+---
+
+## 🚀 Features & Flow
+
+- 🖼 **Splash & Onboarding:** Animated SwiftUI multi-step flow  
+- 🔐 **Login:** Basic placeholder validation (Firebase OTP planned)  
+- 📋 **Coin List:**  
+  - Pagination (20 coins/page)  
+  - Sort/filter by price and 24h performance  
+  - Swipe-to-favorite  
+- 📈 **Coin Detail:** Price history charts with time filters  
+- ⭐ **Favorites:** Easily manage saved coins  
+- 🌙 **Dark Mode:** Automatic theme switching  
+
+---
+
+## ⚠ Known Limitations
+
+- Firebase OTP not yet implemented  
+- No offline caching beyond `UserDefaults`  
+- Basic error handling for login & networking  
+
+---
+
+## 📦 Build & Run
+
+1. Clone:
    ```bash
-   git clone https://github.com/rahnsoft/CoinRankingiOSApp.git
+   git clone https://github.com/username/CoinRankingCrypto.git
+   cd CoinRankingCrypto
    pod install
+   open CoinRankingCrypto.xcworkspace
+
+## 📊 Visual Architecture Diagram
+
+```mermaid
+flowchart TB
+    subgraph Presentation[Presentation Layer]
+        UI[UIKit / SwiftUI Views]
+        VM[ViewModels]
+        C[Coordinators]
+    end
+    
+    subgraph Domain[Domain Layer]
+        UC[Use Cases]
+        E[Entities]
+    end
+    
+    subgraph Data[Data Layer]
+        R[Repositories]
+        API[Networking (Alamofire + SSL Pinning)]
+        DB[Persistence]
+    end
+    
+    UI -- Solid: Navigation --> C
+    C -- Solid: Navigation --> UI
+    UI -- Solid: User Actions --> VM
+    VM -. Dashed: Data Flow .-> UC
+    UC -. Dashed: Data Flow .-> R
+    R -. Dashed: Network Calls .-> API
+    R -. Dashed: Local Storage .-> DB
+    
+    style Presentation fill:#fce4ec,stroke:#f06292,stroke-width:2px
+    style Domain fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
+    style Data fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
