@@ -13,6 +13,16 @@ An iOS application that fetches cryptocurrency data from the **CoinRanking API**
 
 ---
 
+## 📸 Screenshots
+
+> *Screenshots coming soon - app currently in development*
+
+| Coin List | Coin Detail | Favorites |
+|-----------|-------------|-----------|
+| ![Coin List](screenshots/coin-list.png) | ![Coin Detail](screenshots/coin-detail.png) | ![Favorites](screenshots/favorites.png) |
+
+---
+
 ## 🛠 Tech Stack
 
 - **Language:** Swift 5+  
@@ -118,48 +128,146 @@ Security is critical in fintech and cryptocurrency apps. This project implements
 
 ## 📦 Build & Run
 
-1. Clone:
+### Prerequisites
+- Xcode 13.0+
+- iOS 14.0+
+- CocoaPods installed
+- CoinRanking API key ([Get one here](https://coinranking.com/api))
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/CoinRankingCrypto.git
+   git clone https://github.com/yourusername/CoinRankingCrypto.git
    cd CoinRankingCrypto
+   ```
+
+2. **Install dependencies:**
+   ```bash
    pod install
+   ```
+
+3. **Open workspace:**
+   ```bash
    open CoinRankingCrypto.xcworkspace
    ```
 
-2. Add your CoinRanking API key to the configuration file
-3. Build and run on iOS Simulator or device
+4. **Configure API Key:**
+   - Create a `Config.plist` file in the project root
+   - Add your CoinRanking API key:
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>API_KEY</key>
+       <string>YOUR_COINRANKING_API_KEY_HERE</string>
+   </dict>
+   </plist>
+   ```
+
+5. **Build and run** on iOS Simulator or device
 
 ---
 
-## 📊 Visual Architecture Diagram
+## 🧪 Testing
+
+```bash
+# Run unit tests
+cmd+u in Xcode
+
+# Run UI tests  
+cmd+u with UI Test target selected
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow Swift coding conventions
+- Add unit tests for new features
+- Update documentation for API changes
+- Ensure security best practices are maintained
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- [CoinRanking API](https://coinranking.com/api) for cryptocurrency data
+- [Alamofire](https://github.com/Alamofire/Alamofire) for networking
+- [DGCharts](https://github.com/danielgindi/Charts) for beautiful charts
+- [SnapKit](https://github.com/SnapKit/SnapKit) for programmatic layouts
+
+---
+
+## 📞 Support
+
+- 🐛 **Found a bug?** [Open an issue](https://github.com/yourusername/CoinRankingCrypto/issues)
+- 💡 **Have a suggestion?** [Start a discussion](https://github.com/yourusername/CoinRankingCrypto/discussions)
+- ❓ **Need help?** Check the [Wiki](https://github.com/yourusername/CoinRankingCrypto/wiki)
+
+---
+
+<div align="center">
+  Made with ❤️ by [Your Name](https://github.com/yourusername)
+</div>
+
+---
+
+## 📊 MVVM+C + Clean Architecture Diagram
 
 ```mermaid
 flowchart TB
-    subgraph Presentation[Presentation Layer]
-        UI[UIKit / SwiftUI Views]
-        VM[ViewModels]
-        C[Coordinators]
+    subgraph Clean["🏗️ CLEAN ARCHITECTURE"]
+        subgraph Presentation["📱 PRESENTATION LAYER"]
+            subgraph MVVMC["MVVM + COORDINATOR PATTERN"]
+                V[Views<br/>UIKit/SwiftUI]
+                VM[ViewModels<br/>Business Logic]
+                C[Coordinators<br/>Navigation Flow]
+            end
+        end
+        
+        subgraph Domain["🎯 DOMAIN LAYER"]
+            UC[Use Cases<br/>Business Rules]
+            E[Entities<br/>Core Models]
+            R_Interface[Repository<br/>Interfaces]
+        end
+        
+        subgraph Data["💾 DATA LAYER"]
+            R_Impl[Repository<br/>Implementation]
+            API[Network Service<br/>Alamofire + SSL]
+            Storage[Local Storage<br/>Keychain + UserDefaults]
+        end
     end
     
-    subgraph Domain[Domain Layer]
-        UC[Use Cases]
-        E[Entities]
-    end
+    %% MVVM+C Flow
+    V <-->|Navigation| C
+    V -->|User Events| VM
+    VM -->|State Updates| V
     
-    subgraph Data[Data Layer]
-        R[Repositories]
-        API[Networking with SSL Pinning]
-        DB[Persistence Storage]
-    end
+    %% Clean Architecture Flow
+    VM -.->|Use Case Calls| UC
+    UC -.->|Repository Interface| R_Interface
+    R_Interface -.->|Implementation| R_Impl
+    R_Impl -.->|API Calls| API
+    R_Impl -.->|Data Persistence| Storage
     
-    UI -->|Navigation| C
-    C -->|Navigation| UI
-    UI -->|User Actions| VM
-    VM -.->|Data Flow| UC
-    UC -.->|Data Flow| R
-    R -.->|Network Calls| API
-    R -.->|Local Storage| DB
-    
+    %% Styling
+    style Clean fill:#f9f9f9,stroke:#333,stroke-width:3px
+    style MVVMC fill:#e8f4fd,stroke:#1976d2,stroke-width:2px
     style Presentation fill:#fce4ec,stroke:#f06292,stroke-width:2px
     style Domain fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
     style Data fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
@@ -167,27 +275,35 @@ flowchart TB
 
 ---
 
-## 🔄 Data Flow Architecture
+## 🔄 MVVM+C Data Flow
 
 ```mermaid
 sequenceDiagram
-    participant U as User
-    participant V as View
-    participant VM as ViewModel
-    participant UC as UseCase
-    participant R as Repository
-    participant API as CoinRanking API
+    participant U as 👤 User
+    participant V as 📱 View<br/>(UIKit/SwiftUI)
+    participant C as 🧭 Coordinator
+    participant VM as 🧠 ViewModel<br/>(MVVM)
+    participant UC as 🎯 UseCase<br/>(Clean Architecture)
+    participant R as 📚 Repository<br/>(Clean Architecture)
+    participant API as 🌐 CoinRanking API
     
-    U->>V: Tap coin list
-    V->>VM: Load coins
-    VM->>UC: Get coins use case
-    UC->>R: Fetch coins
-    R->>API: HTTPS request (SSL pinned)
-    API-->>R: JSON response
-    R-->>UC: Parsed entities
-    UC-->>VM: Coin models
-    VM-->>V: Update UI state
-    V-->>U: Display coin list
+    Note over U,API: MVVM + Coordinator + Clean Architecture Flow
+    
+    U->>V: Tap "Load Coins"
+    V->>VM: loadCoins()
+    VM->>UC: execute(GetCoinsUseCase)
+    UC->>R: fetchCoins()
+    R->>API: HTTPS Request (SSL Pinned)
+    API-->>R: JSON Response
+    R-->>UC: [CoinEntity]
+    UC-->>VM: [CoinModel]
+    VM-->>V: updateUI(coins)
+    V-->>U: Display Coin List
+    
+    Note over V,C: Navigation Flow
+    U->>V: Tap coin item
+    V->>C: navigate(to: .coinDetail)
+    C->>V: present CoinDetailView
 ```
 
 ---
