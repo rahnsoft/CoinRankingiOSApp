@@ -132,7 +132,7 @@ Security is critical in fintech and cryptocurrency apps. This project implements
 - Xcode 13.0+
 - iOS 14.0+
 - CocoaPods installed
-- CoinRanking API key ([Get one here](https://coinranking.com/api))
+- CoinRanking API key ([Get one here]([https://coinranking.com/api](https://account.coinranking.com/create-developer-account)))
 
 ### Installation
 
@@ -222,7 +222,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name](https://github.com/yourusername)
+  Made with ❤️ by [Nicklaus](https://github.com/rahnsoft)
 </div>
 
 ---
