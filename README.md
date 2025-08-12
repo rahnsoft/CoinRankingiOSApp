@@ -124,6 +124,12 @@ Security is critical in fintech and cryptocurrency apps. This project implements
    cd CoinRankingCrypto
    pod install
    open CoinRankingCrypto.xcworkspace
+   ```
+
+2. Add your CoinRanking API key to the configuration file
+3. Build and run on iOS Simulator or device
+
+---
 
 ## 📊 Visual Architecture Diagram
 
@@ -142,8 +148,8 @@ flowchart TB
     
     subgraph Data[Data Layer]
         R[Repositories]
-        API[Networking (Alamofire + SSL Pinning)]
-        DB[Persistence]
+        API[Networking with SSL Pinning]
+        DB[Persistence Storage]
     end
     
     UI -->|Navigation| C
@@ -157,5 +163,61 @@ flowchart TB
     style Presentation fill:#fce4ec,stroke:#f06292,stroke-width:2px
     style Domain fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px
     style Data fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
-    linkStyle default stroke-width:2px
-    linkStyle 3,4,5,6 stroke:#999,stroke-dasharray: 5 5
+```
+
+---
+
+## 🔄 Data Flow Architecture
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant V as View
+    participant VM as ViewModel
+    participant UC as UseCase
+    participant R as Repository
+    participant API as CoinRanking API
+    
+    U->>V: Tap coin list
+    V->>VM: Load coins
+    VM->>UC: Get coins use case
+    UC->>R: Fetch coins
+    R->>API: HTTPS request (SSL pinned)
+    API-->>R: JSON response
+    R-->>UC: Parsed entities
+    UC-->>VM: Coin models
+    VM-->>V: Update UI state
+    V-->>U: Display coin list
+```
+
+---
+
+## 🛡️ Security Architecture
+
+```mermaid
+flowchart LR
+    subgraph App[iOS App]
+        K[Keychain Storage]
+        UD[UserDefaults]
+    end
+    
+    subgraph Network[Network Layer]
+        SSL[SSL Pinning]
+        TLS[HTTPS/TLS 1.3]
+    end
+    
+    subgraph Server[CoinRanking API]
+        API[REST Endpoints]
+        Auth[API Authentication]
+    end
+    
+    K -->|API Keys| SSL
+    UD -->|Favorites UUIDs| SSL
+    SSL -->|Verified Connection| TLS
+    TLS -->|Encrypted Requests| API
+    API -->|Authenticated Response| Auth
+    
+    style App fill:#ffebee,stroke:#ef5350,stroke-width:2px
+    style Network fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style Server fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+```
