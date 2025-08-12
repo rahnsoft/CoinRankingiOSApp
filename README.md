@@ -15,11 +15,29 @@ An iOS application that fetches cryptocurrency data from the **CoinRanking API**
 
 ## 📸 Screenshots
 
-> *Screenshots coming soon - app currently in development*
+### 🚀 Onboarding & Authentication
 
-| Coin List | Coin Detail | Favorites |
-|-----------|-------------|-----------|
-| ![Coin List](screenshots/coin-list.png) | ![Coin Detail](screenshots/coin-detail.png) | ![Favorites](screenshots/favorites.png) |
+| Get Started | Login | OTP Validation |
+|-------------|-------|----------------|
+| ![Get Started](screenshots/Get-started.PNG) | ![Login](screenshots/login.PNG) | ![OTP Validation](screenshots/otp-validation.PNG) |
+
+### 📋 Coin Management
+
+| Coin List | Filter Coins | Make Favorites |
+|-----------|--------------|----------------|
+| ![Coin List](screenshots/coin-list.PNG) | ![Filter Coins](screenshots/filter-coins.PNG) | ![Make Favorites](screenshots/make-favorites.PNG) |
+
+### 📈 Detailed Views
+
+| Coin Detail (Overview) | Coin Detail (Charts) | Coin Detail (Stats) |
+|------------------------|----------------------|---------------------|
+| ![Coin Detail](screenshots/coin-detail.PNG) | ![Coin Detail 2](screenshots/coin-detail-2.PNG) | ![Coin Detail 3](screenshots/coin-detail-3.PNG) |
+
+### ⭐ Favorites Management
+
+| Favorites List | Favorites (Alternative View) |
+|----------------|------------------------------|
+| ![Favorites](screenshots/favorites.PNG) | ![Favorites 2](screenshots/favorites-2.PNG) |
 
 ---
 
