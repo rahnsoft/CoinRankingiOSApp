@@ -2,7 +2,14 @@
 
 ## 📖 Overview
 
-An iOS application that fetches cryptocurrency data from the **CoinRanking API** and delivers a rich, secure, and responsive user experience.
+An iOS app that fetches cryptocurrency data from the CoinRanking API and delivers a secure, responsive experience.
+Built with MVVM + Coordinator and Clean Architecture, it ensures separation of concerns, testability, scalability, and robust security.
+
+UIKit handles navigation and lists, while SwiftUI powers onboarding and charts.
+The domain layer contains reusable business rules, and the data layer employs Alamofire with SSL pinning, Keychain for sensitive data, and UserDefaults for non-sensitive persistence.
+Security is further reinforced with compile-time hardening using -fstack-protector-strong and -D_FORTIFY_SOURCE=2.
+
+This layered, security-focused design makes the app extensible, safe by design, and maintainable for long-term growth.
 
 ### ✨ Highlights
 - 🖼 **Splash Screen & Onboarding** — Smooth SwiftUI transitions  
