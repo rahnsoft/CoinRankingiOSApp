@@ -153,14 +153,14 @@ Security is critical in fintech and cryptocurrency apps. This project implements
    ```
 
 4. **Configure API Key:**
-   - Create a `Config.plist` file in the project root
+   - Create a `infoConfig.plist` file in the project root
    - Add your CoinRanking API key:
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
    <plist version="1.0">
    <dict>
-       <key>API_KEY</key>
+       <key>COIN_RANKING_API_KEY</key>
        <string>YOUR_COINRANKING_API_KEY_HERE</string>
    </dict>
    </plist>
