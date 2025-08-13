@@ -163,7 +163,7 @@ Security is critical in fintech and cryptocurrency apps. This project implements
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/CoinRankingCrypto.git
+   git clone https://github.com/rahnsoft/CoinRankingCrypto.git
    cd CoinRankingCrypto
    ```
 
@@ -178,7 +178,7 @@ Security is critical in fintech and cryptocurrency apps. This project implements
    ```
 
 4. **Configure API Key:**
-   - Create a `infoConfig.plist` file in the project root
+   - Create a `infoConfig.plist` file in the CoinRankingCryptoData framework root
    - Add your CoinRanking API key:
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
