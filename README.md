@@ -163,7 +163,7 @@ Security is critical in fintech and cryptocurrency apps. This project implements
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/rahnsoft/CoinRankingCrypto.git
+   git clone https://github.com/rahnsoft/CoinRankingiOSApp.git
    cd CoinRankingCrypto
    ```
 
